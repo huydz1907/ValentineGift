@@ -1,0 +1,695 @@
+.background {
+
+    width: 99%;
+    height: auto;
+
+
+}
+
+
+.container {
+    position: relative;
+}
+
+
+.play {
+
+    position: absolute;
+
+    animation-play-state: running;
+    top: 5px;
+
+    text-align: center;
+
+}
+
+.book {
+
+    position: absolute;
+    top: -100%;
+    right: -45%;
+    scale: 0.01;
+    visibility: hidden;
+    opacity: 0%;
+
+    animation-name: bookzoom;
+    animation-fill-mode: forwards;
+    animation-play-state: paused;
+
+    animation-duration: 5s;
+
+}
+
+.book:hover {
+    cursor: pointer;
+}
+
+@keyframes bookzoom {
+    0% {
+        visibility: hidden;
+    }
+
+    1% {
+        visibility: visible;
+        opacity: 0%;
+        scale: 0.01;
+    }
+
+    70% {
+        right: -45%;
+    }
+
+    100% {
+        opacity: 100%;
+        visibility: visible;
+        scale: 0.3;
+        right: -40%;
+        top: -102%;
+    }
+
+}
+
+.huyfm {
+    position: absolute;
+    top: 25%;
+    right: 50%;
+    scale: 1.3;
+    opacity: 0%;
+    visibility: hidden;
+
+    animation-name: huyshow;
+    animation-fill-mode: forwards;
+    animation-play-state: paused;
+    animation-delay: 4s;
+    animation-duration: 6s;
+}
+
+@keyframes huyshow {
+    0% {
+        visibility: hidden;
+    }
+
+    1% {
+        visibility: visible;
+        opacity: 0%;
+    }
+
+    100% {
+        opacity: 100%;
+        visibility: visible;
+    }
+
+}
+
+.speech {
+    position: absolute;
+    top: 1%;
+    right: 64%;
+    scale: 0.8;
+    opacity: 0%;
+    visibility: hidden;
+
+    animation-name: huyshow;
+    animation-fill-mode: forwards;
+    animation-play-state: paused;
+    animation-delay: 4s;
+    animation-duration: 6s;
+}
+
+.credit {
+    position: absolute;
+    top:10%;
+}
+
+.kitkat {
+
+    position: absolute;
+    top: 0%;
+    right: -15%;
+    scale: 0.2;
+    opacity: 0;
+    visibility: hidden;
+
+
+
+    animation-name: kitshow;
+    animation-fill-mode: both;
+    animation-play-state: paused;
+    animation-delay: 7s;
+    animation-duration: 10s;
+
+
+}
+
+.kitkat:hover {
+
+
+    cursor: pointer;
+}
+
+@keyframes kitshow {
+    0% {
+        visibility: hidden;
+    }
+
+    1% {
+        visibility: visible;
+        opacity: 0%;
+    }
+
+    100% {
+        opacity: 100%;
+        visibility: visible;
+        scale: 0.6;
+
+    }
+}
+
+.cl {
+    position: absolute;
+    visibility: visible;
+    top: 30%;
+    right: 65%;
+    scale: 2.2;
+
+    animation-name: cl;
+    animation-fill-mode: forwards;
+    animation-play-state: paused;
+
+    animation-delay: 1s;
+    animation-duration: 5s;
+
+}
+
+@keyframes cl {
+    from {
+        right: 65%;
+        visibility: visible;
+    }
+
+    to {
+        right: 130%;
+        visibility: hidden;
+    }
+}
+
+.cr {
+    position: absolute;
+
+    top: 30%;
+    right: 14.5%;
+    visibility: visible;
+
+    scale: 2.2;
+    animation-name: cr;
+    animation-fill-mode: forwards;
+    animation-play-state: paused;
+
+    animation-delay: 1s;
+    animation-duration: 5s;
+
+}
+
+@keyframes cr {
+    from {
+        right: 14.5%;
+        visibility: visible;
+    }
+
+    to {
+        right: -50%;
+        visibility: hidden;
+    }
+}
+
+
+.ask {
+    position: absolute;
+    top: -47%;
+    right: -17%;
+    scale: 0.4;
+
+    animation-name: asktan;
+    animation-fill-mode: forwards;
+    animation-play-state: paused;
+
+    animation-duration: 1.5s;
+}
+
+@keyframes asktan {
+    0% {}
+
+    1% {}
+
+
+    100% {
+        scale: 0.4;
+        opacity: 0;
+        visibility: hidden;
+
+    }
+}
+
+
+
+.yes {
+    position: absolute;
+    top: 52%;
+    right: 15%;
+    scale: 0.4;
+    visibility: visible;
+
+    animation-name: yestan;
+    animation-fill-mode: forwards;
+    animation-play-state: paused;
+
+    animation-duration: 1.5s;
+}
+
+.yes:hover {
+    cursor: pointer;
+    scale: 0.5;
+}
+
+@keyframes yestan {
+    0% {}
+
+    1% {
+        scale: 0.4;
+        opacity: 100;
+    }
+
+    99% {
+        scale: 2;
+        top: 35%;
+
+    }
+
+    100% {
+        scale: 0.4;
+        opacity: 0;
+        visibility: hidden;
+
+        right: 25%;
+
+    }
+}
+
+
+.no {
+    position: absolute;
+    top: 60%;
+    right: 45%;
+    scale: 0.4;
+    opacity: 100;
+
+    animation-name: asktan;
+    animation-fill-mode: forwards;
+    animation-play-state: paused;
+
+    animation-duration: 1.5s;
+}
+
+.no:hover {
+    cursor: no-drop;
+    opacity: 0;
+
+}
+
+
+
+.letter {
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    scale: 1;
+
+    animation-name: thu1tan;
+    animation-fill-mode: forwards;
+    animation-play-state: paused;
+
+    animation-duration: 1.5s;
+}
+
+@keyframes thu1tan {
+    0% {}
+
+    1% {
+        opacity: 100;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.letter2 {
+    visibility: hidden;
+    position: absolute;
+    top: -23%;
+    right: 9.5%;
+    scale: 1.12;
+
+    animation-name: thu2hien;
+    animation-fill-mode: forwards;
+    animation-play-state: paused;
+
+    animation-duration: 3s;
+
+}
+
+@keyframes thu2hien {
+
+    0% {
+        visibility: visible;
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 100;
+        visibility: visible;
+    }
+}
+
+.heart {
+    position: absolute;
+    top: 55%;
+    right: 47%;
+    scale: 1;
+
+    animation-name: timtan;
+    animation-fill-mode: forwards;
+    animation-play-state: paused;
+
+    animation-duration: 3s;
+
+
+}
+
+.heart:hover {
+    scale: 1.2;
+    cursor: pointer;
+}
+
+.heart1 {
+    position: absolute;
+    visibility: visible;
+    top: 55%;
+    right: 46%;
+    scale: 1;
+
+    animation-name: timtan1;
+    animation-fill-mode: forwards;
+    animation-play-state: paused;
+
+    animation-duration: 1.2s;
+
+
+}
+
+.heart1:hover {
+    scale: 1.2;
+    cursor: pointer;
+}
+
+@keyframes timtan1 {
+    0% {}
+
+    1% {
+        visibility: visible;
+
+        opacity: 100;
+    }
+
+    99% {}
+
+    100% {
+
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+@keyframes timtan {
+    0% {}
+
+    1% {
+        scale: 1.2;
+        opacity: 100;
+    }
+
+    99% {
+        scale: 8;
+
+    }
+
+    100% {
+        scale: 1;
+        opacity: 0;
+    }
+}
+
+.show1 {
+    position: absolute;
+    top: -4%;
+    right: 10%;
+    opacity: 0;
+    visibility: hidden;
+
+
+
+    animation-name: showra;
+    animation-fill-mode: forwards;
+    animation-play-state: paused;
+    animation-delay: 3s;
+    animation-duration: 6s;
+}
+
+@keyframes showra {
+    0% {
+        opacity: 0;
+    }
+
+    1% {
+        visibility: visible;
+        opacity: 0;
+        scale: 0.1;
+        top: -4%;
+
+    }
+
+    100% {
+        opacity: 100;
+        scale: 0.8;
+        visibility: visible;
+        top: -20%;
+        right: 25%;
+    }
+}
+
+
+
+.quotes {
+    position: absolute;
+    top: 30px;
+    left: 35%;
+
+    h1 {
+        color: red;
+        text-align: center;
+    }
+}
+
+.flying1 {
+    position: absolute;
+
+    top: 50%;
+    right: 10%;
+    scale: 0.3;
+
+    animation-name: bay1;
+
+    animation-play-state: paused;
+    animation-duration: 10s;
+
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+
+}
+
+@keyframes bay1 {
+    from {
+        top: 70%;
+        visibility: hidden;
+    }
+
+    to {
+        top: -60%;
+        visibility: visible;
+    }
+}
+
+.flying2 {
+    position: absolute;
+    top: 50%;
+    right: -15%;
+    scale: 0.4;
+
+    animation-name: bay2;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    animation-play-state: paused;
+    animation-duration: 14s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes bay2 {
+    from {
+        top: 70%;
+        visibility: hidden;
+    }
+
+    to {
+        top: -60%;
+        visibility: visible;
+    }
+}
+
+.flying3 {
+    position: absolute;
+    top: 50%;
+    right: 58%;
+    scale: 0.3;
+
+    animation-name: bay3;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    animation-play-state: paused;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes bay3 {
+    from {
+        top: 70%;
+        visibility: hidden;
+    }
+
+    to {
+        top: -60%;
+        visibility: visible;
+    }
+}
+
+.flying4 {
+    position: absolute;
+    top: 50%;
+    right: 65%;
+    scale: 0.2;
+
+    animation-name: bay4;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    animation-play-state: paused;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes bay4 {
+    from {
+        top: 70%;
+        visibility: hidden;
+    }
+
+    to {
+        top: -60%;
+        visibility: visible;
+    }
+}
+
+.flying5 {
+    position: absolute;
+    top: 50%;
+    right: -1%;
+    scale: 0.3;
+
+    animation-name: bay5;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    animation-play-state: paused;
+    animation-iteration-count: infinite;
+
+    animation-duration: 6s;
+}
+
+@keyframes bay5 {
+    from {
+        top: 70%;
+        visibility: hidden;
+    }
+
+    to {
+        top: -60%;
+        visibility: visible;
+    }
+}
+
+.flying6 {
+    position: absolute;
+    top: 50%;
+    right: 75%;
+    scale: 0.4;
+
+    animation-name: bay6;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    animation-play-state: paused;
+    animation-iteration-count: infinite;
+
+    animation-duration: 8s;
+}
+
+@keyframes bay6 {
+    from {
+        top: 70%;
+        visibility: hidden;
+    }
+
+    to {
+        top: -60%;
+        visibility: visible;
+    }
+}
+
+.flying7 {
+    position: absolute;
+    top: 50%;
+    right: -6%;
+    scale: 0.3;
+
+    animation-name: bay7;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    animation-play-state: paused;
+    animation-iteration-count: infinite;
+    animation-duration: 15s;
+}
+
+@keyframes bay7 {
+    from {
+        top: 70%;
+        visibility: hidden;
+    }
+
+    to {
+        top: -60%;
+        visibility: visible;
+    }
+}
