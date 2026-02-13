@@ -14,6 +14,9 @@ const bay7_ani = document.getElementsByClassName('flying7')[0]
 const cl = document.getElementsByClassName('cl')[0]
 const cr = document.getElementsByClassName('cr')[0]
 
+const guide1 = document.getElementsByClassName('guide1')[0]
+const guide2 = document.getElementsByClassName('guide2')[0]
+
 const yes = document.getElementsByClassName('yes')[0]
 const no = document.getElementsByClassName('no')[0]
 const askbg = document.getElementsByClassName('ask')[0]
@@ -42,6 +45,7 @@ playButton.addEventListener("click", () => bay5_ani.style.animationPlayState = "
 playButton.addEventListener("click", () => bay6_ani.style.animationPlayState = "running")
 playButton.addEventListener("click", () => bay7_ani.style.animationPlayState = "running")
 playButton.addEventListener("click", () => kitplay.style.animationPlayState = "running")
+playButton.addEventListener("click", () => guide1.style.animationPlayState = "running")
 
 playButtonyes.addEventListener("click", () => askbg.style.animationPlayState = "running")
 playButtonyes.addEventListener("click", () => yes.style.animationPlayState = "running")
@@ -54,6 +58,8 @@ playButtonop.addEventListener("click", () => cr.style.animationPlayState = "runn
 playButtonhuyfm.addEventListener("click", () => bookplay.style.animationPlayState = "running")
 playButtonhuyfm.addEventListener("click", () => huyshow.style.animationPlayState = "running")
 playButtonhuyfm.addEventListener("click", () => speech.style.animationPlayState = "running")
+playButtonhuyfm.addEventListener("click", () => guide2.style.animationPlayState = "running")
+
 
 playButtonop.addEventListener("click", () => sound.play())
 
