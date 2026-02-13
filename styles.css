@@ -768,17 +768,19 @@
         animation-fill-mode: forwards;
         animation-play-state: paused;
 
-        animation-delay:13s;
+        animation-delay: 13s;
         animation-duration: 5s;
     }
-    @keyframes guide1{
-        0%{}
-        1%{
+
+    @keyframes guide1 {
+        0% {}
+
+        1% {
             opacity: 0%;
             visibility: visible;
         }
 
-        100%{
+        100% {
             opacity: 100%;
             visibility: visible;
         }
@@ -792,8 +794,8 @@
         scale: 0.3;
         visibility: hidden;
         opacity: 0%;
-        
-        
+
+
 
         animation-name: huyshow;
         animation-fill-mode: forwards;
@@ -802,14 +804,16 @@
         animation-delay: 10s;
         animation-duration: 6s;
     }
-    @keyframes guide2{
-        0%{}
-        1%{
+
+    @keyframes guide2 {
+        0% {}
+
+        1% {
             opacity: 0%;
             visibility: visible;
         }
 
-        100%{
+        100% {
             opacity: 100%;
             visibility: visible;
         }
