@@ -9,6 +9,15 @@
 
     }
 
+    .noti {
+        visibility: visible;
+        position: absolute;
+        scale: 9;
+        top: 80%;
+        right: -10%;
+
+    }
+
 
 
     .container {
@@ -756,6 +765,13 @@
 
     }
 
+    .noti {
+        visibility: hidden;
+        position: absolute;
+        scale: 0.001;
+
+    }
+
     .guide1 {
         position: absolute;
         top: 72%;
@@ -931,7 +947,7 @@
 
     .credit {
         position: absolute;
-        top: 10%;
+        top: 3%;
     }
 
     .kitkat {
@@ -1159,8 +1175,8 @@
     .letter2 {
         visibility: hidden;
         position: absolute;
-        top: -23%;
-        right: 9.5%;
+        top: 2.7%;
+        right: 36%;
         scale: 1.12;
 
         animation-name: thu2hien;
